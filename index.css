@@ -1,0 +1,90 @@
+body {
+    background-color: gray;
+}
+  
+.btn {
+  cursor: pointer;
+  }
+
+body {
+  text-align: center;
+  color: white;
+}
+
+body > header {
+  height: 200px;
+}
+
+.clock {
+  text-align: center; 
+}
+
+.clicked {
+  color: #7f8c8d;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+.toDoList {
+  position: static;
+  /* top: 10px;
+  left: 610px; */
+  list-style: none;
+  text-align: center;
+}
+
+.toDoList > li {
+  display: inline-block;
+  /* border: 1px solid red; */
+  width: 160px;
+  height: 150px;
+  margin: 10px 5px 0px 0px;
+  overflow: hidden;
+  /* word-break: normal; */
+}
+
+.toDoList > li > button {
+  background-color: gray;
+  color: white;
+  margin-right: 10px;
+  border: none;
+  float: left;
+}
+
+.toDoList > li > span {
+  /* border: 1px solid black; */
+  background-color: rgb(117, 110, 101);
+  width: 127px;
+  height: auto;
+  float: left;
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+}
+
+@keyframes fadeIn {
+  from {
+  opacity: 0;
+  }
+  to {
+  opacity: 1;
+  }
+}
+
+.bgImage {
+  /* display: none; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+  overflow: hidden;
+}
